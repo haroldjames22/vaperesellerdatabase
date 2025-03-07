@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2025 at 04:24 AM
+-- Generation Time: Mar 07, 2025 at 05:17 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -35,7 +35,6 @@ CREATE TABLE `tbl_user` (
   `u_username` varchar(50) NOT NULL,
   `u_type` varchar(50) NOT NULL,
   `u_password` varchar(50) NOT NULL,
-  `u_cpassword` varchar(50) NOT NULL,
   `u_contact` varchar(50) NOT NULL,
   `u_status` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -44,12 +43,11 @@ CREATE TABLE `tbl_user` (
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`u_id`, `u_fname`, `u_lname`, `u_email`, `u_username`, `u_type`, `u_password`, `u_cpassword`, `u_contact`, `u_status`) VALUES
-(7, 'james', 'villena', 'Villena@gmail.com', 'james12', 'Admin', '11111111', '11111111', '09234990256', 'Pending'),
-(8, 'clyde', 'villarico', 'jc@gmail.com', 'jc123', 'User', '12312312', '12312312', '09234990256', 'Active'),
-(9, 'clyde', 'hingayat', 'jc69@gmail.com', 'jc555', 'User', '222222222', '22222222', '09232323323', 'Pending'),
-(10, 'jmare', 'gumade', 'jmare66@gmail.com', 'jmare123', 'Admin', '12345678', '12345678', '09234990256', 'Active'),
-(11, 'tests', 'tests', 'tests', 'tests', 'User', 'teststests', 'teststests', 'tests', 'Active');
+INSERT INTO `tbl_user` (`u_id`, `u_fname`, `u_lname`, `u_email`, `u_username`, `u_type`, `u_password`, `u_contact`, `u_status`) VALUES
+(7, 'james', 'villena', 'Villena@gmail.com', 'james12', 'Admin', '11111111', '09234990256', 'Pending'),
+(8, 'clyde', 'villarico', 'jc@gmail.com', 'jc123', 'User', '12312312', '09234990256', 'Active'),
+(9, 'clyde', 'hingayat', 'jc69@gmail.com', 'jc555', 'User', '222222222', '09232323323', 'Pending'),
+(10, 'jmare', 'gumade', 'jmare66@gmail.com', 'jmare123', 'Admin', '12345678', '09234990256', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -69,7 +67,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `u_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `u_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
